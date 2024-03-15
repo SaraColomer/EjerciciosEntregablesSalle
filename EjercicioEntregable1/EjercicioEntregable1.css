@@ -17,12 +17,12 @@ body {
     grid-template-columns: auto auto auto auto; /* Definir cuatro columnas de ancho automático */
     gap: 2px; /* Espaciado entre botones de la barra de navegación */
     font-size: x-large;
+    list-style: none;
   }
 
-  #navBar li {
+  #navBar a {
     background-color: lightblue;
     padding: 20px;
-    list-style-type: none;
     text-align: center;
   }
 
@@ -39,6 +39,8 @@ body {
     margin-top: 20px;
     transition: 1.5s;
   }
+
+  
   /*Otras formas de alinear la barra de navegacion...
       nav li {
         display: inline;
