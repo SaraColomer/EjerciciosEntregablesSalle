@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ejercicio entregable 1</title>
     <style>
-      * {
-        box-sizing: border-box;
+      body {
         max-width: 1200px;
         margin: auto;
       }
@@ -14,10 +13,13 @@
         text-align: center;
         margin: 40px;
       }
-      nav {
+      #navBar {
         margin-bottom: 40px;
+        margin: auto;
+        width: max-content;
       }
-      nav ul {
+
+      #navBar ul {
         display: grid;
         grid-template-columns: auto auto auto auto; /* Definir cuatro columnas de ancho automático */
         gap: 2px; /* Espacio entre elementos */
@@ -25,18 +27,26 @@
         font-size: x-large;
       }
 
-      nav li {
+      #navBar li {
         background-color: lightblue;
         padding: 20px;
         list-style-type: none;
         text-align: center;
       }
 
-      a {
+      #navBar a {
         text-decoration: none;
         color: white;
       }
+
+      #navBar a :hover {
+        background-color: black;
+        padding: 25px;
+        margin: 10px;
+        transition: 1.5s;
+      }
     </style>
+
     <!-- Otras formas de alinear la barra de navegacion...
       <style>
       nav li {
@@ -66,10 +76,10 @@
         <ul>
           <!--En cada <li> debería ir un <a> para que se vinculase con cada sección.
             los '#' sirven para enlazar los ID,     los '.' sirven para enlazar clases-->
-          <li><a href="#whoWeAre">Who we are???</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <a href="#whoWeAre"><li>Who we are???</li></a>
+          <a href="#services"><li>Services</li></a>
+          <a href="#portfolio"><li>Portfolio</li></a>
+          <a href="#contact"><li>Contact</li></a>
         </ul>
       </nav>
     </header>
