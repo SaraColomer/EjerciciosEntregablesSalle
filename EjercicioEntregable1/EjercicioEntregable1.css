@@ -3,28 +3,27 @@
 }
 
 body {
-  max-width: 1200px;
+  max-width: 1024px;
   margin: auto;
 }
 
-h1 {
-  text-align: center;
-  margin: 40px;
-}
+/* BARRA DE NAVEGACION Y SUBMENÚ SERVICES */
 
 #navBar {
   margin-bottom: 40px;
-  margin: auto;
-  width: max-content;
   position: relative;
+  background-color: lightblue;
 }
 
 #navBar ul {
   display: grid;
-  grid-template-columns: auto auto auto auto; /* Definir cuatro columnas de ancho automático */
+  grid-template-columns: auto auto auto auto auto; /* Definir cuatro columnas de ancho automático */
   font-size: x-large;
   list-style: none;
-  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 0px;
+  justify-content: left;
 }
 
 #navBar a {
@@ -38,11 +37,6 @@ h1 {
   color: white;
 }
 
-#navBar li {
-  margin-bottom: 40px;
-  width: auto;
-}
-
 #navBar li :hover {
   background-color: black;
   transition: 2.5s;
@@ -53,6 +47,7 @@ h1 {
   position: absolute;
   width: max-content;
   top: 65px; /*para bajarlo 65px para cuadrarlo con la barra de navegacion...*/
+  left: 155px;
 }
 
 #navBar li:hover .submenu {
@@ -62,6 +57,7 @@ h1 {
 #navBar .submenu ul {
   display: grid;
   grid-template-columns: auto;
+  padding-top: 0;
   height: 0; /*para que no se vea el margen inferior del hover del nav...*/
 }
 
@@ -70,28 +66,13 @@ h1 {
   margin: 0;
 }
 
-#navBar .submenu a {
-  border: 1px solid lightblue; /*para que no aparezca el espacio en blanco dando errores en la barra*/
-  padding-left: 15px;
-  padding-right: 15px;
+#navBar .submenu li {
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
-/*Otras formas de alinear la barra de navegacion...
-      nav li {
-        display: inline;
-        float: left; 
-        background-color: lightblue;
-        padding: 10px;
-        list-style-type: none;
-        margin-left: 2px;
-      }
-
-      a {
-        list-style-type: none;
-        text-decoration: none;
-        color: white;
-      }
-
-      #whoWeAre h2 {
-        clear: both;  Esto hace que el título aparezca debajo de los elementos flotantes 
-      } */
+#navBar .submenu a {
+  border: 1px solid lightblue; /*para que no aparezca el espacio en blanco dando errores en la barra*/
+  padding-left: 15.5px;
+  padding-right: 15.5px;
+}
