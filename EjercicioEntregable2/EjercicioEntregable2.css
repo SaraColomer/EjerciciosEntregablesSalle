@@ -366,7 +366,7 @@ iframe {
 
 /*-----------------------------------EMAIL US-----------------------------------*/
 
-.emailUs {
+#emailUs {
   background-color: rgb(89, 58, 125);
   width: 1024px;
   margin: auto;
@@ -380,7 +380,7 @@ iframe {
   background-size: cover;
 }
 
-.emailUs form {
+#emailUs form {
   margin: auto;
   text-align: center;
   margin-top: 30px;
