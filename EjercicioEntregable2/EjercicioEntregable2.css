@@ -224,18 +224,23 @@ svg {
 }
 
 svg {
-  width: 100px;
-  height: 100px;
-  padding: 15px;
+  width: 80px;
+  height: 80px;
+  padding: 20px;
   border: 5px solid lightgrey;
   border-radius: 50%;
   fill: rgb(89, 58, 125);
+  margin-right: 5px;
 }
 
 svg:hover {
   background-color: rgb(89, 58, 125);
   fill: white;
   transition: 1s;
+}
+
+#services p {
+  text-align: justify;
 }
 
 /*-----------------------------------------SECCION PORTFOLIO ----------------------------------------------*/
