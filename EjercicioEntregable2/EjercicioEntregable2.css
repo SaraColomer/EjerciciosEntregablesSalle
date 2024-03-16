@@ -10,11 +10,24 @@ body {
 }
 
 /* BARRA DE NAVEGACION Y SUBMENÚ SERVICES */
+h1 {
+  margin: 0;
+  color: white;
+  padding: 100px;
+  padding-top: 15%;
+  padding-left: 30px;
+  background-image: url(img/header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Ajusta la imagen para cubrir completamente el área del h1 */
+  height: 370px;
+}
 
 #navBar {
   margin-bottom: 40px;
   position: relative;
   background-color: rgb(122, 78, 148);
+  margin-top: -30px;
 }
 
 #navBar ul {
