@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body {
     max-width: 1200px;
     margin: auto;
@@ -10,14 +13,15 @@ body {
     margin-bottom: 40px;
     margin: auto;
     width: max-content;
+    position: relative;
   }
 
   #navBar ul {
     display: grid;
     grid-template-columns: auto auto auto auto; /* Definir cuatro columnas de ancho automático */
-    gap: 2px; /* Espaciado entre botones de la barra de navegación */
     font-size: x-large;
     list-style: none;
+    padding: 0;
   }
 
   #navBar a {
@@ -31,15 +35,51 @@ body {
     color: white;
   }
 
-  #navBar a :hover {
-    background-color: black;
-    padding: 25px;
-    margin-left: 80px;
-    margin-right: 80px;
-    margin-top: 20px;
-    transition: 1.5s;
+  #navBar li{
+    margin-bottom: 40px;
+    width: auto;
   }
 
+  #navBar li :hover {
+    background-color: black;
+    transition: 2.5s;
+  }
+  
+
+  #navBar .submenu {
+    display: none;
+    position: absolute;
+    width: max-content;
+    top: 65px; /*para bajarlo 65px para cuadrarlo con la barra de navegacion...*/
+  }
+  
+  #navBar li:hover .submenu {
+    display: block;
+  }
+  
+
+  #navBar .submenu ul {
+    display: grid;
+    grid-template-columns: auto;
+    height: 0;  /*para que no se vea el margen inferior del hover del nav...*/
+  }
+   
+  #navBar .submenu a:hover {
+    background-color: black; 
+  }
+  
+  #navBar .submenu {
+    padding: 0;
+    margin: 0;
+  }
+  
+  #navBar .submenu a{
+  border: 1px solid lightblue;
+  }
+  
+
+  
+  
   
   /*Otras formas de alinear la barra de navegacion...
       nav li {
