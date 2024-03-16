@@ -141,11 +141,12 @@ h1 {
   padding: 50px;
   padding-bottom: 100px;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 30% 30% 30%;
   grid-template-areas:
     "title title title"
     "article1 article2 article3"
     "article4 article5 article6";
+  gap: 20px;
 }
 
 /*Nombramos a cada seccion del display grid para decidir como los desplegamos */
@@ -156,27 +157,62 @@ h1 {
 
 #service1 {
   grid-area: article1;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-areas:
+    "svg title"
+    "svg lorem";
+}
+svg {
+  grid-area: svg;
+}
+
+#services p {
+  grid-area: lorem;
 }
 
 #service2 {
   grid-area: article2;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-areas:
+    "svg title"
+    "svg lorem";
 }
 #service3 {
   grid-area: article3;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-areas:
+    "svg title"
+    "svg lorem";
 }
 
 #service4 {
   grid-area: article4;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-areas:
+    "svg title"
+    "svg lorem";
 }
 
 #service5 {
   grid-area: article5;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-areas:
+    "svg title"
+    "svg lorem";
 }
 
 #service6 {
   grid-area: article6;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-areas:
+    "svg title"
+    "svg lorem";
 }
 
 #services h3 {
@@ -185,6 +221,21 @@ h1 {
   margin-top: 20px;
   font-size: x-large;
   font-weight: 100;
+}
+
+svg {
+  width: 100px;
+  height: 100px;
+  padding: 15px;
+  border: 5px solid lightgrey;
+  border-radius: 50%;
+  fill: rgb(89, 58, 125);
+}
+
+svg:hover {
+  background-color: rgb(89, 58, 125);
+  fill: white;
+  transition: 1s;
 }
 
 /*-----------------------------------------SECCION PORTFOLIO ----------------------------------------------*/
