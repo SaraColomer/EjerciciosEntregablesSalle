@@ -134,7 +134,7 @@ h1 {
 #services h2 {
   margin: auto;
   width: max-content;
-
+  grid-area: title;
   font-size: xx-large;
   font-weight: 500;
 }
@@ -152,10 +152,6 @@ h1 {
 }
 
 /*Nombramos a cada seccion del display grid para decidir como los desplegamos */
-
-#services h2 {
-  grid-area: title;
-}
 
 #service1 {
   grid-area: article1;
@@ -222,7 +218,7 @@ svg {
   width: max-content;
   margin-top: 20px;
   font-size: x-large;
-  font-weight: 100;
+  font-weight: 500;
 }
 
 svg {
