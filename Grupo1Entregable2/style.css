@@ -6,10 +6,10 @@
 
 body {
   max-width: 1024px;
-  margin: auto;
+  margin: 0 auto;
 }
 
-/* BARRA DE NAVEGACION Y SUBMENÚ SERVICES */
+/*---------------------------------------------BARRA DE NAVEGACION Y SUBMENÚ SERVICES--------------------------------------------*/
 h1 {
   margin: 0;
   color: white;
@@ -57,7 +57,7 @@ h1 {
   display: none;
   position: absolute;
   width: max-content;
-  top: 72px; /*para bajarlo 65px para cuadrarlo con la barra de navegacion...*/
+  top: 72px; /*para bajarlo para cuadrarlo con la barra de navegacion...*/
   left: 165px;
 }
 
@@ -88,7 +88,7 @@ h1 {
   padding-right: 15.5px;
 }
 
-/* ------------------Who We Are------------------- */
+/* -----------------------------------------------Section Who We Are--------------------------------------------------- */
 
 #whoWeAre h2 {
   margin: 20px auto;
@@ -127,7 +127,7 @@ h1 {
   position: relative;
 }
 
-/*------------------------------------OUR SERVICES-----------------------------------*/
+/*---------------------------------------------------OUR SERVICES--------------------------------------------------------*/
 
 #services h2 {
   margin: auto;
@@ -240,7 +240,7 @@ svg:hover {
   text-align: justify;
 }
 
-/*-----------------------------------------SECCION PORTFOLIO ----------------------------------------------*/
+/*-----------------------------------------------------SECCION PORTFOLIO ----------------------------------------------------*/
 
 #portfolio {
   background-color: rgb(248, 248, 248);
@@ -315,7 +315,7 @@ svg:hover {
   transition: 1.5s;
 }
 
-/*------------------------------------LOCATION----------------------------------*/
+/*-----------------------------------------------------SECCIÓN LOCATION----------------------------------------------------*/
 #location {
   margin: 0 auto;
 }
@@ -359,7 +359,7 @@ iframe {
   width: 80%;
 }
 
-/*-----------------------------------EMAIL US-----------------------------------*/
+/*-------------------------------------------------EMAIL US SECTION----------------------------------------------------------*/
 
 #emailUs {
   background-color: rgb(89, 58, 125);
@@ -408,7 +408,7 @@ input[type="submit"] {
   margin-right: 60px;
 }
 
-/*------------------------------------FOOTER------------------------------------*/
+/*----------------------------------------------------------FOOTER---------------------------------------------------------*/
 
 footer {
   background-color: rgb(122, 78, 148);
