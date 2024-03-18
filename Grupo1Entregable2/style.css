@@ -47,7 +47,7 @@ h1 {
   color: white;
 }
 
-#navBar li :hover {
+#navBar a:hover {
   background-color: white;
   color: rgb(122, 78, 148);
   transition: 1s;
@@ -124,6 +124,10 @@ h1 {
 .ad {
   margin: auto;
   display: block;
+}
+.ad:hover {
+  width: 100%;
+  transition: 2s;
 }
 
 /*---------------------------------------------------OUR SERVICES SECTION-------------------------------------------------------*/
