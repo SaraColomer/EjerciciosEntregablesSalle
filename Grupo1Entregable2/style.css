@@ -126,7 +126,7 @@ h1 {
   display: block;
 }
 .ad:hover {
-  width: 100%;
+  width: 370px;
   transition: 2s;
 }
 
