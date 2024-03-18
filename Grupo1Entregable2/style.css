@@ -50,7 +50,7 @@ h1 {
 #navBar li :hover {
   background-color: white;
   color: rgb(122, 78, 148);
-  transition: 0s;
+  transition: 1s;
 }
 
 #navBar .submenu {
