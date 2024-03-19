@@ -9,7 +9,7 @@ body {
   margin: 0 auto;
 }
 
-/*---------------------------------------------BARRA DE NAVEGACION Y SUBMENÚ SERVICES--------------------------------------------*/
+/*---------------------------------------BARRA DE NAVEGACION Y SUBMENÚ SERVICES-----------------------------------------*/
 h1 {
   margin: 0;
   color: white;
@@ -47,10 +47,10 @@ h1 {
   color: white;
 }
 
-#navBar li :hover {
+#navBar a:hover {
   background-color: white;
   color: rgb(122, 78, 148);
-  transition: 0s;
+  transition: 1s;
 }
 
 #navBar .submenu {
@@ -88,7 +88,7 @@ h1 {
   padding-right: 15.5px;
 }
 
-/* -----------------------------------------------Section Who We Are--------------------------------------------------- */
+/* -----------------------------------------------Who We Are SECTION--------------------------------------------------- */
 
 #whoWeAre h2 {
   margin: 20px auto;
@@ -122,12 +122,15 @@ h1 {
 }
 
 .ad {
-  margin-left: 30px;
-  margin-right: 30px;
-  position: relative;
+  margin: auto;
+  display: block;
+}
+.ad:hover {
+  width: 370px;
+  transition: 2s;
 }
 
-/*---------------------------------------------------OUR SERVICES--------------------------------------------------------*/
+/*---------------------------------------------------OUR SERVICES SECTION-------------------------------------------------------*/
 
 #services h2 {
   margin: auto;
@@ -240,7 +243,7 @@ svg:hover {
   text-align: justify;
 }
 
-/*-----------------------------------------------------SECCION PORTFOLIO ----------------------------------------------------*/
+/*------------------------------------------------PORTFOLIO SECTION-----------------------------------------------------*/
 
 #portfolio {
   background-color: rgb(248, 248, 248);
@@ -315,7 +318,7 @@ svg:hover {
   transition: 2s;
 }
 
-/*-----------------------------------------------------SECCIÓN LOCATION----------------------------------------------------*/
+/*--------------------------------------------------LOCATION SECTION----------------------------------------------------*/
 #location {
   margin: 0 auto;
 }
@@ -359,11 +362,10 @@ iframe {
   width: 80%;
 }
 
-/*-------------------------------------------------EMAIL US SECTION----------------------------------------------------------*/
+/*-----------------------------------------------EMAIL US SECTION-------------------------------------------------------*/
 
 #emailUs {
   background-color: rgb(89, 58, 125);
-  width: 1024px;
   margin: auto;
   color: white;
   margin-top: 100px;
@@ -379,6 +381,7 @@ iframe {
   margin: auto;
   text-align: center;
   margin-top: 30px;
+  width: max-content;
 }
 label {
   width: 120px;
@@ -403,9 +406,9 @@ textarea {
 }
 input[type="submit"] {
   margin-top: 30px; /* Espacio entre el textarea y el botón */
-  width: 100px;
-  height: 20px;
-  margin-right: 60px;
+  width: 300px;
+  display: block;
+  margin-left: auto;
 }
 
 /*----------------------------------------------------------FOOTER---------------------------------------------------------*/
@@ -419,4 +422,9 @@ footer {
 }
 footer a {
   color: white;
+}
+
+footer a:hover {
+  color: rgb(122, 78, 148);
+  background-color: white;
 }
