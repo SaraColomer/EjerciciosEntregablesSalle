@@ -312,7 +312,7 @@ svg:hover {
 #portfolio .img6:hover {
   transform: rotate(360deg);
   border-radius: 50%;
-  transition: 1.5s;
+  transition: 2s;
 }
 
 /*-----------------------------------------------------SECCIÓN LOCATION----------------------------------------------------*/
