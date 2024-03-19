@@ -23,7 +23,7 @@ h1 {
   background-image: url(img/header.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; /* Ajusta la imagen para cubrir completamente el área del h1 */
+  background-size: cover; /* Ajusta la imagen para cubrir completamente el área del h1*/
 }
 
 #navBar {
@@ -101,11 +101,11 @@ h1 {
   font-size: xx-large;
   font-weight: 500;
 }
-.aboutUs {
+h2 + p {
   width: 500px;
   margin: auto;
-  margin-bottom: 30px;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 #whoWeAre .imagen1 {
@@ -119,13 +119,27 @@ h1 {
 
 .articles {
   display: grid;
-  grid-template-columns: 45% 1% 45%;
-  gap: 40px;
+  grid-template-columns: 45% 5% 45%;
+  grid-template-areas:
+    "leftArticle hr rightArticle1"
+    "leftArticle hr aside"
+    "leftArticle hr rightArticle2";
   background-color: rgb(248, 248, 248);
   padding-left: 20px;
   padding-right: 20px;
 }
-
+.leftArticle {
+  grid-area: leftArticle;
+}
+.rightArticle1 {
+  grid-area: rightArticle1;
+}
+.rightArticle2 {
+  grid-area: rightArticle2;
+}
+hr {
+  grid-area: hr;
+}
 .ad {
   margin: auto;
   display: block;
@@ -139,6 +153,7 @@ h1 {
 
 #services h2 {
   margin: auto;
+  margin-bottom: 40px;
   width: max-content;
   grid-area: title;
   font-size: xx-large;
@@ -274,8 +289,10 @@ svg:hover {
   grid-area: p;
   width: max-content;
   margin: auto;
-  margin-bottom: 20px;
   margin-top: 20px;
+  margin-bottom: 30px;
+  color: rgb(160, 159, 159);
+  font-weight: 400;
 }
 .img2 {
   grid-area: img2;
@@ -425,6 +442,9 @@ footer {
   color: white;
   text-align: right;
   padding-right: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 1024px;
 }
 footer a {
   color: white;

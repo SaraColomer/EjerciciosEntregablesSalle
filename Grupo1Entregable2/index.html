@@ -38,12 +38,12 @@
       <!--En cada section un ID para que se pueda enlazar con la barra de navegación y dar estilos con CSS-->
       <section id="whoWeAre">
         <h2>Who we are?</h2>
-        <p class="aboutUs">
+        <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
           necessitatibus nostrum nam autem repellendus est.
         </p>
         <div class="articles">
-          <article>
+          <article class="leftArticle">
             <h3>Lorem ipsum</h3>
             <img
               src="img/1.jpg"
@@ -75,7 +75,7 @@
             </p>
           </article>
           <hr />
-          <aside>
+          <article class="rightArticle1">
             <h3>Lorem ipsum</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -87,7 +87,11 @@
               enim ab explicabo, doloremque assumenda numquam dolore cum
               voluptates?
             </p>
+          </article>
+          <aside>
             <img src="img/ad.png" alt="Advertise Here" class="ad" />
+          </aside>
+          <article class="rightArticle2">
             <h3>Lorem ipsum</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -98,7 +102,7 @@
               consequuntur commodi quia, soluta laudantium cumque ea. Quia vel,
               laudantium ea ex sit voluptates dignissimos explicabo nihil?
             </p>
-          </aside>
+          </article>
         </div>
       </section>
       <section id="services">
@@ -216,7 +220,6 @@
       <section id="portfolio">
         <h2>Portfolio</h2>
         <h4>There are succes projects created by us</h4>
-
         <img
           src="img/2.jpg"
           alt="imagen2"
@@ -287,11 +290,9 @@
         <article class="findUs">
           <h3>You can find us</h3>
           <iframe
-            style="border: 3px solid black"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.41144077395!2d2.1274877123176696!3d41.40858647117743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49816c5cc995f%3A0xe6d45d60cbf71998!2sLa%20Salle%20Campus%20Barcelona-URL!5e0!3m2!1ses!2ses!4v1710622990923!5m2!1ses!2ses"
             width="600"
             height="450"
-            style="border: 0"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
