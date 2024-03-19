@@ -242,6 +242,9 @@ svg:hover {
   background-color: rgb(89, 58, 125);
   fill: white;
   transition: 1s;
+  padding: 12px;
+  width: 90px;
+  height: 90px;
 }
 
 /*------------------------------------------------PORTFOLIO SECTION-----------------------------------------------------*/
@@ -312,6 +315,8 @@ svg:hover {
 #portfolio img:hover {
   transform: rotate(-15deg);
   transition: 1s;
+  width: 210px;
+  height: 170px;
 }
 #portfolio .img6:hover {
   transform: rotate(360deg);
