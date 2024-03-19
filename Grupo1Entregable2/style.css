@@ -7,6 +7,11 @@
 body {
   max-width: 1024px;
   margin: 0 auto;
+  height: 100dvh;
+}
+
+p {
+  text-wrap: pretty;
 }
 
 /*---------------------------------------BARRA DE NAVEGACION Y SUBMENÚ SERVICES-----------------------------------------*/
@@ -237,10 +242,6 @@ svg:hover {
   background-color: rgb(89, 58, 125);
   fill: white;
   transition: 1s;
-}
-
-#services p {
-  text-align: justify;
 }
 
 /*------------------------------------------------PORTFOLIO SECTION-----------------------------------------------------*/
